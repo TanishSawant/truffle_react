@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import SimpleStorageContract from "./contracts/SimpleStorage.json";
+import walletContract from "./contracts/wallet.json"
 import getWeb3 from "./getWeb3";
-
 import "./App.css";
 
 class App extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
-
   componentDidMount = async () => {
     try {
       // Get network provider and web3 instance.
